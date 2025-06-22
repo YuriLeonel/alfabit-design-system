@@ -3,25 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  --bg-light: #FFFFFF;
+  --bg-dark: #F8F8F8;
+  --bg-disabled: #EFEFEF;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+  --text-primary: #181818;
+  --text-secondary: #5C5C5C;
+  --text-tertiary: #747474;
+  --text-disabled: #8A8A8A;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  --icons: #7C7B7B;
+  --borders: #D7D7D7;
+  --dividers: #EDEDED;
+  --boxes: #F8F8F8;
+
+  --accent1-primary: #2D5BFF;
+  --accent1-secondary: #6284FD;
+  --accent1-tertiary: #96ADFF;
+  --accent1-quaternary: #ECF0FF;
+  --accent1-hover: #1B4AF0;
+  --accent1-click: #002ED0;
+
+  --accent2-primary: #AF4BFE;
+  --accent2-secondary: #BE74F9;
+  --accent2-tertiary: #E2BDFF;
+  --accent2-quaternary: #F5E8FF;
 }
