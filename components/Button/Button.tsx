@@ -6,7 +6,7 @@ export type ButtonProps = {
 
 const Button = ({children, className, ...props}: ButtonProps) => {
   return <button 
-        className={`${className} bg-accent1-primary text-white px-4 py-2 rounded-md`}
+        className={`${className} bg-primary text-white px-4 py-2 rounded-md`}
         {...props}
         >{ children }</button>
 }

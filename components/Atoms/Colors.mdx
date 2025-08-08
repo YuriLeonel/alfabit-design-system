@@ -1,0 +1,36 @@
+export const meta = { title: 'Atoms/Colors' }
+
+# Colors
+
+Design tokens mapped to Tailwind color utilities via CSS variables.
+
+Palette
+
+<div className="grid grid-cols-2 gap-4 p-4 bg-bg-dark/10 rounded-md">
+  <div>
+      <div className="w-full h-10 bg-primary rounded"/>
+      <p className="text-sm mt-1">primary — rgba(var(--primary), alpha)</p>
+  </div>
+  <div>
+      <div className="w-full h-10 bg-secondary rounded"/>
+      <p className="text-sm mt-1">secondary — rgba(var(--secondary), alpha)</p>
+  </div>
+  <div>
+      <div className="w-full h-10 bg-tertiary rounded"/>
+      <p className="text-sm mt-1">tertiary — rgba(var(--tertiary), alpha)</p>
+  </div>
+  <div>
+      <div className="w-full h-10 bg-quaternary rounded"/>
+      <p className="text-sm mt-1">quaternary — rgba(var(--quaternary), alpha)</p>
+  </div>
+  <div>
+      <div className="w-full h-10 bg-bg-light rounded border border-divider"/>
+      <p className="text-sm mt-1">bg-light / divider</p>
+  </div>
+  <div>
+      <div className="w-full h-10 bg-bg-dark rounded"/>
+      <p className="text-sm mt-1 text-white">bg-dark</p>
+  </div>
+  </div>
+
+

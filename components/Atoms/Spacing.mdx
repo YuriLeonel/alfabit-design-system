@@ -1,0 +1,33 @@
+export const meta = { title: 'Atoms/Spacing' }
+
+# Spacing
+
+Spacing tokens are exposed as Tailwind spacing scale entries and CSS variables.
+
+Scale
+
+<ul>
+  <li>none — var(--spacing-none)</li>
+  <li>4xs — var(--spacing-4xs)</li>
+  <li>2xs — var(--spacing-2xs)</li>
+  <li>xs — var(--spacing-xs)</li>
+  <li>sm — var(--spacing-sm)</li>
+  <li>md — var(--spacing-md)</li>
+  <li>lg — var(--spacing-lg)</li>
+  <li>xl — var(--spacing-xl)</li>
+  <li>2xl — var(--spacing-2xl)</li>
+  <li>4xl — var(--spacing-4xl)</li>
+  <li>0..9 — numeric aliases mapping to the same values</li>
+</ul>
+
+Preview
+
+<div className="flex flex-col gap-4 p-4 bg-bg-light rounded-md">
+  <div className="bg-quaternary p-0 border border-divider">p-0</div>
+  <div className="bg-quaternary p-1 border border-divider">p-1</div>
+  <div className="bg-quaternary p-2 border border-divider">p-2</div>
+  <div className="bg-quaternary p-3 border border-divider">p-3</div>
+  <div className="bg-quaternary p-4 border border-divider">p-4</div>
+</div>
+
+
