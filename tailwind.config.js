@@ -56,13 +56,23 @@ module.exports = {
         'icons': 'rgb(var(--icons) / <alpha-value>)',
         'outline': 'rgb(var(--outline) / <alpha-value>)',
         'divider': 'rgb(var(--divider) / <alpha-value>)',
-        'bg-light': 'rgb(var(--bg-light) / <alpha-value>)',
-        'bg-dark': 'rgb(var(--bg-dark) / <alpha-value>)',
-        'bg-disabled': 'rgb(var(--bg-disabled) / <alpha-value>)',
         'text-primary': 'rgb(var(--text-primary) / <alpha-value>)',
         'text-secondary': 'rgb(var(--text-secondary) / <alpha-value>)',
         'text-tertiary': 'rgb(var(--text-tertiary) / <alpha-value>)',
         'text-disabled': 'rgb(var(--text-disabled) / <alpha-value>)',
+      },
+      backgroundColor: {
+        'light': 'rgb(var(--bg-light) / <alpha-value>)',
+        'dark': 'rgb(var(--bg-dark) / <alpha-value>)',
+        'disabled': 'rgb(var(--bg-disabled) / <alpha-value>)',
+      },
+      textColor: {
+        gray: {
+          'primary': 'rgb(var(--text-primary) / <alpha-value>)',
+          'secondary': 'rgb(var(--text-secondary) / <alpha-value>)',
+          'tertiary': 'rgb(var(--text-tertiary) / <alpha-value>)',
+        },
+        disabled: 'rgb(var(--text-disabled) / <alpha-value>)',
       },
       boxShadow: {
         'sm': 'var(--shadow-sm)',
