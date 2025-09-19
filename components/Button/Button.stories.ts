@@ -5,16 +5,6 @@ import Button, { ButtonProps } from "./Button"
 const meta: Meta<ButtonProps> = {
   title: 'Molecules/Button',
   component: Button,
-  tags: ['autodocs'],
-  parameters: {
-    docs: {
-      description: {
-        component:
-          'Simple button atom. It composes native button attributes and supports theming via className.\n' +
-          'Use for primary actions. Ensure accessible labels and focus styles are preserved when customizing.',
-      },
-    },
-  },
   argTypes: {
     children: {
       control: 'text',
@@ -27,6 +17,11 @@ const meta: Meta<ButtonProps> = {
     className: {
       control: 'text',
       description: 'Additional Tailwind or custom classes to extend styling',
+    },
+    variant: {
+      control: 'select',
+      options: ['primary', 'secondary', 'tertiary'],
+      description: 'The variant of the button',
     },
   },
 }
@@ -46,9 +41,55 @@ export const Disabled: StoryObj<ButtonProps> = {
   },
 }
 
+export const Secondary: StoryObj<ButtonProps> = {
+  args: {
+    children: 'Button',
+    variant: 'secondary',
+  },
+}
+
+export const SecondaryDisabled: StoryObj<ButtonProps> = {
+  args: {
+    children: 'Button',
+    variant: 'secondary',
+    disabled: true,
+  },
+}
+
+export const Tertiary: StoryObj<ButtonProps> = {
+  args: {
+    children: 'Button',
+    variant: 'tertiary',
+  },
+}
+
+export const TertiaryDisabled: StoryObj<ButtonProps> = {
+  args: {
+    children: 'Button',
+    variant: 'tertiary',
+    disabled: true,
+  },
+}
+
 export const Violet: StoryObj<ButtonProps> = {
   args: {
     children: 'Button',
     className: 'theme-violet',
+  },
+}
+
+export const VioletSecondary: StoryObj<ButtonProps> = {
+  args: {
+    children: 'Button',
+    className: 'theme-violet',
+    variant: 'secondary',
+  },
+}
+
+export const VioletTertiary: StoryObj<ButtonProps> = {
+  args: {
+    children: 'Button',
+    className: 'theme-violet',
+    variant: 'tertiary',
   },
 }
