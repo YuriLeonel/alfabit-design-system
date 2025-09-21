@@ -1,0 +1,24 @@
+import { Meta, Primary, Controls, Canvas } from "@storybook/addon-docs/blocks"
+import * as LinkStories from "./Link.stories"
+
+<Meta of={LinkStories} />
+
+# Link
+
+The Link is a molecule used to navigate to a different page. It supports all native attributes via `React.AnchorHTMLAttributes`, and can be themed through `className`.
+
+## Variants
+
+### Primary
+<Canvas of={LinkStories.Primary} />
+
+### Disabled
+<Canvas of={LinkStories.Disabled} />
+
+### Violet
+<Canvas of={LinkStories.Violet} />
+
+## Props
+
+<Primary />
+<Controls />
