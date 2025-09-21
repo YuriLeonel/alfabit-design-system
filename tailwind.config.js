@@ -60,6 +60,7 @@ module.exports = {
         'text-secondary': 'rgb(var(--text-secondary) / <alpha-value>)',
         'text-tertiary': 'rgb(var(--text-tertiary) / <alpha-value>)',
         'text-disabled': 'rgb(var(--text-disabled) / <alpha-value>)',
+        'disabled': 'rgb(var(--text-disabled) / <alpha-value>)',
       },
       backgroundColor: {
         'light': 'rgb(var(--bg-light) / <alpha-value>)',
@@ -72,7 +73,6 @@ module.exports = {
           'secondary': 'rgb(var(--text-secondary) / <alpha-value>)',
           'tertiary': 'rgb(var(--text-tertiary) / <alpha-value>)',
         },
-        disabled: 'rgb(var(--text-disabled) / <alpha-value>)',
       },
       boxShadow: {
         'sm': 'var(--shadow-sm)',

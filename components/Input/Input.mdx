@@ -1,0 +1,39 @@
+import { Meta, Primary, Controls, Canvas } from "@storybook/addon-docs/blocks"
+import * as InputStories from "./Input.stories"
+
+<Meta of={InputStories} />
+
+# Input
+
+The Input is a molecule used to collect user input. It supports all native attributes via `React.InputHTMLAttributes` or `React.TextareaHTMLAttributes`, and can be themed through `className`.
+
+## Variants
+
+### Primary
+<Canvas of={InputStories.Primary} />
+
+### Disabled
+<Canvas of={InputStories.Disabled} />
+
+### Multiline
+<Canvas of={InputStories.Multiline} />
+
+### Multiline Disabled
+<Canvas of={InputStories.MultilineDisabled} />
+
+### Primary Label
+<Canvas of={InputStories.PrimaryLabel} />
+
+### Disabled Label
+<Canvas of={InputStories.DisabledLabel} />
+
+### Multiline Label
+<Canvas of={InputStories.MultilineLabel} />
+
+### Multiline Disabled Label
+<Canvas of={InputStories.MultilineDisabledLabel} />
+
+## Props
+
+<Primary />
+<Controls />
