@@ -1,0 +1,21 @@
+import { Meta, Primary, Controls, Canvas } from "@storybook/addon-docs/blocks"
+import * as TextBlockStories from "./TextBlock.stories"
+
+<Meta of={TextBlockStories} />
+
+# TextBlock
+
+The TextBlock is a molecule used to display a *title* and *description*. It supports all native attributes via `React.HTMLAttributes` and can be themed through `className`.
+
+## Variants
+
+### Primary
+<Canvas of={TextBlockStories.Primary} />
+
+### MaxWidth
+<Canvas of={TextBlockStories.MaxWidth} />
+
+## Props
+
+<Primary />
+<Controls />
